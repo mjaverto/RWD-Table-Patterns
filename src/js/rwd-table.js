@@ -118,7 +118,7 @@
 
         this.$dropdownGroup = $('<div class="btn-group dropdown-btn-group pull-right" />');
         this.$dropdownBtn = $('<a href="#" data-dropdown="drop' + id + '" class="button dropdown tiny secondary">Display</a><br>');
-        this.$dropdownContainer = $('<ul id="drop' + id + '" data-dropdown-content class="f-dropdown secondary" />');
+        this.$dropdownContainer = $('<ul id="drop' + id + '" data-dropdown-content class="f-dropdown " />');
 
         // Focus btn
         if (this.options.addFocusBtn) {
@@ -151,7 +151,7 @@
         // Display-all btn
         if (this.options.addDisplayAllBtn) {
             // Create display-all btn
-            this.$displayAllBtn = $('<button class="btn btn-default tiny">Display all</button>');
+            this.$displayAllBtn = $('<button class="btn btn-default tiny secondary">Display all</button>');
             // Add display-all btn to dropdown-btn-group
             this.$dropdownGroup.append(this.$displayAllBtn);
 
