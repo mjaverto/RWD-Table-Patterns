@@ -117,8 +117,8 @@
         this.$btnToolbar = $('<div class="btn-toolbar" />');
 
         this.$dropdownGroup = $('<div class="btn-group dropdown-btn-group pull-right" />');
-        this.$dropdownBtn = $('<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Display <span class="caret"></span></button>');
-        this.$dropdownContainer = $('<ul class="dropdown-menu"/>');
+        this.$dropdownBtn = $('<a href="#" data-dropdown="drop1" class="button dropdown">Display</a><br>');
+        this.$dropdownContainer = $('<ul id="drop1" data-dropdown-content class="f-dropdown" />');
 
         // Focus btn
         if(this.options.addFocusBtn) {
