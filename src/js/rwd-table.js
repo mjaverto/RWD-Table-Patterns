@@ -113,12 +113,12 @@
     // Create toolbar with buttons
     ResponsiveTable.prototype.createButtonToolbar = function() {
         var that = this;
-
+        var id = "id" + Math.random().toString(16).slice(2);
         this.$btnToolbar = $('<div class="btn-toolbar" />');
 
         this.$dropdownGroup = $('<div class="btn-group dropdown-btn-group pull-right" />');
-        this.$dropdownBtn = $('<a href="#" data-dropdown="drop1" class="button dropdown tiny">Display</a><br>');
-        this.$dropdownContainer = $('<ul id="drop1" data-dropdown-content class="f-dropdown" />');
+        this.$dropdownBtn = $('<a href="#" data-dropdown="drop'+id+'" class="button dropdown tiny">Display</a><br>');
+        this.$dropdownContainer = $('<ul id="drop'+id+'" data-dropdown-content class="f-dropdown" />');
 
         // Focus btn
         if(this.options.addFocusBtn) {
